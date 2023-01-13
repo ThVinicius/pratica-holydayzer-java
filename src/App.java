@@ -19,7 +19,7 @@ public class App {
                 case 1 -> calendar.printHolidayList();
                 case 2 -> {
                     Scanner scannerDate = new Scanner(System.in);
-                    System.out.print("Informe a data: ");
+                    System.out.print("Informe a data (com o formato dia/mês/2023): ");
                     while (!scannerDate.hasNext("[0-3][1-9][/][0-1][1-9][/]2023")) {
                         System.out.print("Data no formato inválido!\nInforme uma nova data: ");
                         scannerDate.nextLine();
