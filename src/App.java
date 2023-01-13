@@ -16,7 +16,7 @@ public class App {
             int optionMenu = scanner.nextInt();
 
             switch (optionMenu) {
-                case 1 -> calendar.getListOfHolydays();
+                case 1 -> calendar.printHolidayList();
                 case 2 -> {
                     Scanner scannerDate = new Scanner(System.in);
                     System.out.print("Informe a data: ");
@@ -25,7 +25,7 @@ public class App {
                         scannerDate.nextLine();
                     }
                     String date = scannerDate.next();
-                    calendar.getHolydayName(date);
+                    calendar.printHolidayName(date);
                 }
                 default -> System.out.println("Valor inválido");
             }

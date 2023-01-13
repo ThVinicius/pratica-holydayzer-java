@@ -15,13 +15,13 @@ public class Calendar {
         this.holydays[10] = new Holyday("Natal", "25/12/2023");
     }
 
-    public void getListOfHolydays() {
+    public void printHolidayList() {
         for (Holyday holyday : this.holydays) {
             System.out.println(holyday.getDate() + " - " + holyday.getName());
         }
     }
 
-    public void getHolydayName(String date) {
+    public void printHolidayName(String date) {
 
         for (Holyday holyday : this.holydays) {
             if (holyday.getDate().equals(date)) {
